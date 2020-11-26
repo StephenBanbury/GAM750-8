@@ -29,7 +29,7 @@ namespace Assets.Scripts
 
         [SerializeField] private string _appID = "54f15673a8fd43318b10d4e42f8dd781";
         [SerializeField] private string _roomName = "NotNearEnough";
-        [SerializeField] private Text _testText;
+        [SerializeField] private Text _status;
 
         public List<AgoraUser> AgoraUsers
         {
@@ -44,6 +44,8 @@ namespace Assets.Scripts
             permissionList.Add(Permission.Microphone);
             permissionList.Add(Permission.Camera);
 #endif
+
+            _status.text = "";
 
             if (instance == null)
             {
@@ -240,7 +242,7 @@ namespace Assets.Scripts
             if (joined)
             {
                 SceneManager.sceneLoaded += OnLevelFinishedLoading; // configure GameObject after scene is loaded
-                _testText.text = $"Joined {_roomName}";
+                _status.text = "Agora: connected";
             }
         }
 
