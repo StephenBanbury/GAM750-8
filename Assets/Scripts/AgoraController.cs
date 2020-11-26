@@ -114,7 +114,7 @@ namespace Assets.Scripts
             var leavingUser = _joinedUsers.FirstOrDefault(u => u.Uid == uid);
             if (leavingUser != null)
             {
-                leavingUser.LeftRoom = true;
+                _joinedUsers.Remove(leavingUser);
 
                 GameObject go = GameObject.Find(uid.ToString());
                 if (!ReferenceEquals(go, null))

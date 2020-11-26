@@ -3203,10 +3203,10 @@ GameObject:
   - component: {fileID: 471765599}
   - component: {fileID: 471765598}
   - component: {fileID: 471765602}
+  - component: {fileID: 471765604}
   - component: {fileID: 471765601}
   - component: {fileID: 471765600}
   - component: {fileID: 471765603}
-  - component: {fileID: 471765604}
   m_Layer: 0
   m_Name: ButtonController
   m_TagString: Untagged
@@ -3282,7 +3282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _obsoleteAppKey: 
   _normcoreAppSettings: {fileID: 11400000, guid: 430bd3d7072e44f439ee062e789ea015, type: 2}
-  _roomToJoinOnStart: NotNearEnough
+  _roomToJoinOnStart: NotNearEnoughController
   _joinRoomOnStart: 1
 --- !u!114 &471765603
 MonoBehaviour:

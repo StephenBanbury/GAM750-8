@@ -1,16 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Normal.Realtime.Serialization;
 using Normal.Realtime;
+using Normal.Realtime.Serialization;
 
 namespace Assets.Scripts
 {
     [RealtimeModel]
     public partial class FormationSelectSyncModel
-    {   
-        // 7, 12
-        [RealtimeProperty(1, true, true)] private int _formationId;
+    {
+        [RealtimeProperty(3, true, true)] private int _formationId;
     }
 }
 
@@ -40,7 +36,7 @@ namespace Assets.Scripts {
         private LocalChangeCache<LocalCacheEntry> _cache = new LocalChangeCache<LocalCacheEntry>();
         
         public enum PropertyID : uint {
-            FormationId = 1,
+            FormationId = 3,
         }
         
         public FormationSelectSyncModel() : this(null) {

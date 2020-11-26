@@ -8,6 +8,11 @@ namespace Assets.Scripts
     {
         private int _currentSceneId;
 
+        void Start()
+        {
+            _currentSceneId = 1;
+        }
+
         public void SceneSelect(int id)
         {
             Debug.Log($"SceneId: {id}");
@@ -33,8 +38,7 @@ namespace Assets.Scripts
 
             var syncScript = gameObject.GetComponent<FormationSelectSync>();
 
-
-            string scenePlusFormation = $"1{id}";
+            string scenePlusFormation = $"{_currentSceneId}{id}";
             int compoundId = int.Parse(scenePlusFormation);
 
             syncScript.SetId(compoundId);

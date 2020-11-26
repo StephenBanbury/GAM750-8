@@ -41,7 +41,7 @@ namespace Assets.Scripts
 
         private void FormationIdDidChange(FormationSelectSyncModel model, int value)
         {
-            Debug.Log($"UpdateFormationId {model.formationId}");
+            Debug.Log($"FormationIdDidChange {model.formationId}");
             UpdateFormationId();
         }
 
