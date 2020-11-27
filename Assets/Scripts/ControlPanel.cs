@@ -11,7 +11,7 @@ using Button = UnityEngine.UI.Button;
 
 namespace Assets.Scripts
 {
-    public class ButtonController : RealtimeComponent<MediaScreenDisplayModel>
+    public class ControlPanel : RealtimeComponent<MediaScreenDisplayModel>
     {
         public class MediaScreenDisplayBufferState
         {
